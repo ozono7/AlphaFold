@@ -62,3 +62,13 @@ entre las dos cadenas, sus posiciones relativas están bien definidas.
   híbrido, etc.) para confirmar.
 - AlphaFold-Multimer funciona mejor cuando las proteínas interactúan de
   forma estable y tienen homólogos que co-evolucionan.
+
+## Qué aprendimos
+
+- Un complejo se predice con las dos secuencias separadas por `:` en
+  ColabFold, que usa el modelo multímero.
+- El ipTM mide la confianza de la interfaz: por encima de 0.8 es muy
+  confiable, entre 0.6 y 0.8 es probablemente correcta y por debajo de
+  0.6 es incierta.
+- Un ipTM bajo no prueba que las proteínas no interactúen; solo dice
+  que AlphaFold no está seguro y que hacen falta experimentos.

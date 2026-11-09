@@ -92,7 +92,8 @@ grafica_plddt <- ggplot(tabla_plddt, aes(x = residuo, y = plddt)) +
   theme_bw()
 
 print(grafica_plddt)
-ggsave("02b_plddt_por_residuo.png", grafica_plddt, width = 12, height = 4, dpi = 300)
+ggsave("02b_plddt_por_residuo.png", grafica_plddt,
+       width = 30, height = 10, units = "cm", dpi = 300)
 
 # --------------------------------------------------------------------------
 # 5. Mapa de calor de PAE (si el archivo incluye la matriz PAE)
@@ -123,7 +124,8 @@ if (!is.null(datos$pae)) {
     coord_fixed()
 
   print(grafica_pae)
-  ggsave("02b_mapa_pae.png", grafica_pae, width = 6, height = 5, dpi = 300)
+  ggsave("02b_mapa_pae.png", grafica_pae,
+       width = 15, height = 13, units = "cm", dpi = 300)
 } else {
   cat("\nEl archivo JSON no incluye la matriz PAE.\n")
 }
@@ -164,5 +166,6 @@ if (!is.null(datos$pae)) {
 #   entre dos residuos. Valores bajos son buenos.
 # - Las regiones con pLDDT < 50 suelen ser desordenadas o flexibles: no
 #   interpretes su forma como definitiva.
-# - Cada gráfico lleva su interpretación: qué es cada eje (con unidades),
-#   qué patrón se ve y qué significa.
+# - El pLDDT y el PAE se leen juntos: el primero dice si cada residuo
+#   está bien colocado y el segundo si las partes de la proteína están
+#   bien colocadas entre sí.

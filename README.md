@@ -23,7 +23,8 @@ cuenta de Google y la secuencia de aminoácidos de tu proteína.
    `query_sequence`.
 3. Ejecuta las celdas en orden (Runtime > Run all).
 4. Descarga los resultados (estructura PDB, puntajes pLDDT y PAE).
-5. Analiza los resultados con los scripts de Python de este repositorio.
+5. Analiza los resultados con los scripts de este repositorio: Python
+   (02 y 05) o R (02b).
 
 ## Organismo de trabajo
 
@@ -36,10 +37,12 @@ biosíntesis de lípidos y ácidos grasos.
 |---|---|---|
 | 01 | `01-primera-prediccion.md` | Tu primera predicción: la subunidad beta de la acetil-CoA carboxilasa (ACCD) de *Chlorella vulgaris* |
 | 02 | `02-interpretar-plddt-pae.py` | Interpretar pLDDT y PAE: ¿la predicción es confiable? (Python) |
+| 02b | `02b-interpretar-plddt-pae-en-R.R` | Interpretar pLDDT y PAE en R: ¿la predicción es confiable? (versión en R del script 02) |
 | 03 | `03-comparar-variantes.md` | Comparar dos variantes de una enzima (silvestre vs mutante) |
 | 04 | `04-complejo-proteina-proteina.md` | Predecir un complejo proteína-proteína |
 | 05 | `05-preparar-docking.py` | Preparar la estructura para docking molecular (Python) |
 | 06 | `06-anotar-dominios.md` | Anotar dominios y motivos en la estructura predicha |
+| — | `Práctica` | Práctica: predecir estructuras de septinas (individuales, truncadas, dímeros y trímero) |
 
 ## Obtener una secuencia de UniProt
 

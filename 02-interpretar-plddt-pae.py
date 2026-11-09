@@ -3,6 +3,9 @@
 ================================================================
 Autor: Dr. José Juan Torres Martínez
 Docente de Ciencias Químicas, UASLP
+México
+
+Serie AlphaFold — Script 02
 
 Descripción: Lee el archivo JSON que genera ColabFold (con el pLDDT por
 residuo), grafica la confianza a lo largo de la secuencia y resume qué
@@ -135,5 +138,6 @@ else:
 #   entre dos residuos. Valores bajos son buenos.
 # - Las regiones con pLDDT < 50 suelen ser desordenadas o flexibles: no
 #   interpretes su forma como definitiva.
-# - Cada gráfico lleva su interpretación: qué es cada eje (con unidades),
-#   qué patrón se ve y qué significa.
+# - El pLDDT y el PAE se leen juntos: el primero dice si cada residuo
+#   está bien colocado y el segundo si las partes de la proteína están
+#   bien colocadas entre sí.

@@ -13,6 +13,8 @@ una microalga acumula lípidos, esta enzima es un buen punto de partida.
 - **Organismo:** *Chlorella vulgaris*
 - **Longitud:** 411 aminoácidos
 - **Función:** carboxiltransferasa, parte del complejo acetil-CoA carboxilasa
+- **EC:** 2.1.3.15
+- **Cofactor:** un ion zinc (Zn2+) por subunidad
 
 ## Paso 1. Obtener la secuencia
 
@@ -70,3 +72,14 @@ script 02.
 
 En el script 02 graficaremos el pLDDT por residuo para ver qué partes de
 ACCD están bien predichas y cuáles no.
+
+## Qué aprendimos
+
+- ACCD es la subunidad beta de la carboxiltransferasa del complejo
+  acetil-CoA carboxilasa: cataliza el paso de acetil-CoA a malonil-CoA,
+  el primer paso comprometido de la biosíntesis de ácidos grasos.
+- Una predicción en ColabFold empieza por la secuencia de aminoácidos
+  (de UniProt) y termina con un modelo PDB y puntajes de confianza
+  (pLDDT y PAE) que se analizan en el script 02.
+- El pLDDT dice qué tan confiable es cada región del modelo: por
+  encima de 70 la predicción es confiable y por debajo de 50 no lo es.

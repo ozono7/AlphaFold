@@ -7,6 +7,7 @@
 # México
 #
 # Material académico para estudiantes
+# Serie "AlphaFold" — Práctica (septinas)
 #
 # Descripción: Práctica académica sobre predicción de estructuras de proteínas con AlphaFold y ColabFold (septinas).
 # ==========================================================================
@@ -47,5 +48,17 @@ MSASTPTQPSGPPVPPVKPILSSPGAYMANFQAGSLNSAGTGTPGGAAPGSTGASPVAPITAGIHSSNKTHEKPTIAARP
 
 4.     Realizar la predicción de las posibles combinaciones diméricas de las proteínas, tanto en sus versiones homodiméricas como heterodiméricas.
 
-5.     Finalmente, realizar la predicción de un trímero 
+5.     Finalmente, realizar la predicción de un trímero
+
+# --------------------------------------------------------------------------
+# Qué aprendimos
+# --------------------------------------------------------------------------
+# - Las septinas forman complejos (dímeros y trímeros) y su estructura se
+#   puede predecir por partes: primero cada proteína sola y sus versiones
+#   truncadas, luego las combinaciones.
+# - El pLDDT por residuo dice qué regiones de cada septina están bien
+#   predichas y cuáles son desordenadas o flexibles.
+# - Comparar las estructuras predichas (individuales, dímeros y trímero)
+#   muestra qué tanto se parecen las tres septinas entre sí y qué cambia
+#   cuando forman complejo.
 

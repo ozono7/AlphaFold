@@ -17,11 +17,15 @@ https://rest.uniprot.org/uniprotkb/P56293.txt
 ```
 
 Busca las líneas que empiezan con `FT` (feature table). Ahí verás:
-- Dominios (por ejemplo, el dominio carboxiltransferasa).
-- Sitios de unión (biotina, sustrato).
+- Dominios: el dominio carboxiltransferasa N-terminal, residuos 32–302.
+- Sitios de unión a zinc (Zn2+): residuos 36, 39, 55 y 58 (dedo de
+  zinc, residuos 36–58).
 - Regiones de interés.
 
-Anota los rangos de residuos de cada dominio.
+Anota los rangos de residuos de cada dominio. Ojo: la biotina no se une
+a ACCD; la biotina la lleva la proteína transportadora BCCP, otra
+subunidad del complejo. En ACCD, los sitios de unión anotados son de
+zinc, no de biotina.
 
 ## Paso 2. Consultar InterPro
 
@@ -60,3 +64,13 @@ una presentación o un artículo.
 - Si un dominio anotado tiene pLDDT bajo, puede ser un dominio
   flexible o una predicción incierta; no lo descartes, pero no
   interpretes su forma como definitiva.
+
+## Qué aprendimos
+
+- La anotación de dominios (UniProt, InterPro) es independiente de
+  AlphaFold: viene de homología y de firmas de secuencia.
+- En ACCD, el dominio carboxiltransferasa cubre los residuos 32–302 y
+  los sitios de unión a zinc son los residuos 36, 39, 55 y 58.
+- Cruzar los dominios con el pLDDT dice qué partes funcionales de la
+  proteína están bien predichas y cuáles hay que interpretar con
+  cautela.
