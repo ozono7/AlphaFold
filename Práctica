@@ -13,15 +13,36 @@
 # ==========================================================================
 
 
-Ejercicio 1: 
+Ejercicio 1:
 
-SM14est
+SM14est es una poliesterasa de Streptomyces sp. SM14 que degrada
+poliésteres (PET), descrita por Almeida et al. (2019, Front. Microbiol.
+10:2187; secuencia en GenBank: BK010828). Su modelo de AlphaFold ya se
+publicó (Front. Microbiol. 2023, doi 10.3389/fmicb.2023.1170880).
+
+1. Busca la secuencia de aminoácidos de SM14est en GenBank (acceso
+   BK010828) y cópiala en formato FASTA.
+2. Predice su estructura tridimensional con AlphaFold Server
+   (https://alphafoldserver.com) o con ColabFold, como en la guía 01.
+3. Evalúa el modelo con el pLDDT por residuo y el gráfico PAE, como en
+   la guía 02, y localiza la tríada catalítica Ser156-Asp202-His234 y
+   el motivo G-H-S-M-G (residuos 154-158).
 
 
 
 Ejercicio 2:
 
-https://alphafoldserver.com/about
+Lee la página "About" de AlphaFold Server
+(https://alphafoldserver.com/about) y anota:
+1. Qué es AlphaFold Server: un servicio web con el modelo AlphaFold 3
+   para predecir estructuras biomoleculares.
+2. Qué tipos de moléculas puede modelar en un mismo trabajo: proteínas,
+   ADN, ARN, ligandos, iones y modificaciones químicas.
+3. Sus límites: cada trabajo está limitado a 5000 tokens, es solo para
+   uso no comercial y no predice moléculas de agua ni átomos de
+   hidrógeno.
+4. Cómo se envía un trabajo: qué datos pide (la secuencia y el tipo de
+   cada molécula) y qué entrega como resultado.
 
 
 
@@ -61,4 +82,7 @@ MSASTPTQPSGPPVPPVKPILSSPGAYMANFQAGSLNSAGTGTPGGAAPGSTGASPVAPITAGIHSSNKTHEKPTIAARP
 # - Comparar las estructuras predichas (individuales, dímeros y trímero)
 #   muestra qué tanto se parecen las tres septinas entre sí y qué cambia
 #   cuando forman complejo.
+# - SM14est es una poliesterasa de Streptomyces sp. SM14 que degrada
+#   PET: su estructura se predice con AlphaFold igual que las septinas
+#   y se evalúa con pLDDT y PAE.
 
