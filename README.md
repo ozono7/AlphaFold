@@ -1,25 +1,54 @@
-# AlphaFold
+# AlphaFold — Predicción de estructura de proteínas en Google Colab
 
-Práctica académica de predicción de estructuras de proteínas con
-AlphaFold y ColabFold, aplicada a las septinas. El material guía al
-estudiante en la predicción de la estructura tridimensional de una
-proteína y en la interpretación del resultado.
+Scripts completos y listos para usar en Google Colab (ColabFold), para
+predecir estructuras de proteínas de interés biotecnológico, sin
+supercomputadora y sin instalar nada.
 
-## Contenido
+**Autor:** Dr. José Juan Torres Martínez
+**Docente de Ciencias Químicas, UASLP**
 
-- Práctica: predicción de estructuras de proteínas con AlphaFold y
-  ColabFold (septinas).
+## Base
 
-## Cómo usarlo
+Todos los scripts usan **ColabFold** (AlphaFold2 en Google Colab):
 
-Sigue el documento de la práctica paso a paso. La predicción de
-estructuras se realiza con ColabFold (en el navegador, sin instalar
-nada en tu computadora).
+https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb
 
-## Autor
+ColabFold es gratuito y corre en la nube de Google. Solo necesitas una
+cuenta de Google y la secuencia de aminoácidos de tu proteína.
 
-**Dr. José Juan Torres Martínez**
-Docente de Ciencias Químicas
-Universidad Autónoma de San Luis Potosí (UASLP), México
+## Cómo se usa
 
-Material académico para estudiantes.
+1. Abre el enlace de ColabFold de arriba.
+2. Pega la secuencia de aminoácidos (en formato de una letra) en la celda
+   `query_sequence`.
+3. Ejecuta las celdas en orden (Runtime > Run all).
+4. Descarga los resultados (estructura PDB, puntajes pLDDT y PAE).
+5. Analiza los resultados con los scripts de Python de este repositorio.
+
+## Organismo de trabajo
+
+*Chlorella vulgaris* (microalga verde), con énfasis en enzimas de la
+biosíntesis de lípidos y ácidos grasos.
+
+## Scripts
+
+| # | Archivo | Tema |
+|---|---|---|
+| 01 | `01-primera-prediccion.md` | Tu primera predicción: la subunidad beta de la acetil-CoA carboxilasa (ACCD) de *Chlorella vulgaris* |
+| 02 | `02-interpretar-plddt-pae.py` | Interpretar pLDDT y PAE: ¿la predicción es confiable? (Python) |
+| 03 | `03-comparar-variantes.md` | Comparar dos variantes de una enzima (silvestre vs mutante) |
+| 04 | `04-complejo-proteina-proteina.md` | Predecir un complejo proteína-proteína |
+| 05 | `05-preparar-docking.py` | Preparar la estructura para docking molecular (Python) |
+| 06 | `06-anotar-dominios.md` | Anotar dominios y motivos en la estructura predicha |
+
+## Obtener una secuencia de UniProt
+
+Si no tienes la secuencia, descárgala de UniProt con su acceso (accession).
+Por ejemplo, para ACCD de *Chlorella vulgaris* (P56293):
+
+```
+https://rest.uniprot.org/uniprotkb/P56293.fasta
+```
+
+Abre ese enlace en el navegador y copia la secuencia (sin la línea que
+empieza con `>`).
