@@ -102,9 +102,38 @@ else:
 # ---------------------------------------------------------------------------
 # Interpretación
 # ---------------------------------------------------------------------------
-# - Si la mayor parte de la proteína tiene pLDDT > 70, la predicción es
-#   confiable en su conjunto.
-# - Regiones con pLDDT < 50 suelen ser desordenadas o flexibles; no
+# Gráfica 1: pLDDT por residuo
+# - Eje X: posición del residuo en la secuencia (1 a N, donde N es la
+#   longitud de la proteína). Cada punto es un aminoácido.
+# - Eje Y: pLDDT, de 0 a 100, adimensional (no tiene unidades: es un
+#   puntaje de confianza). > 90 es muy confiable, 70-90 es confiable,
+#   50-70 es confianza baja, < 50 es no confiable.
+# - Lo que se aprecia: las regiones donde la línea está arriba (pLDDT
+#   alto) están bien predichas; donde cae por debajo de 50, la predicción
+#   no es confiable (suele ser una región desordenada o flexible).
+# - Qué significa: si la mayor parte de la proteína tiene pLDDT > 70,
+#   la predicción es confiable en su conjunto.
+#
+# Gráfica 2: mapa de calor de PAE
+# - Eje X y eje Y: posición del residuo (ambos ejes son residuos).
+# - Color: PAE (predicted aligned error), en Ångströms (Å). Un Å es
+#   10^-10 metros, la escala de los átomos. Valores bajos (azul/verde)
+#   significan que la posición relativa entre esos dos residuos es
+#   confiable; valores altos (rojo) significan que es incierta.
+# - Lo que se aprecia: bloques de valores bajos en la diagonal indican
+#   dominios bien definidos; bloques de valores altos entre dominios
+#   indican que su orientación relativa es incierta.
+# - Qué significa: el PAE dice qué tan segura es la posición relativa
+#   entre partes de la proteína, no solo cada residuo por separado.
+#
+# ---------------------------------------------------------------------------
+# Qué aprendimos
+# ---------------------------------------------------------------------------
+# - El pLDDT (0-100, adimensional) dice qué tan confiable es la posición
+#   de cada aminoácido. Por encima de 70, la predicción es confiable.
+# - El PAE (en Ångströms) dice qué tan confiable es la posición relativa
+#   entre dos residuos. Valores bajos son buenos.
+# - Las regiones con pLDDT < 50 suelen ser desordenadas o flexibles: no
 #   interpretes su forma como definitiva.
-# - En el PAE, bloques azules/verdes en la diagonal indican dominios bien
-#   definidos; bloques rojos entre dominios indican orientación incierta.
+# - Cada gráfico necesita su interpretación: qué es cada eje (con unidades),
+#   qué patrón se ve y qué significa.
