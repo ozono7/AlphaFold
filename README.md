@@ -24,7 +24,7 @@ cuenta de Google y la secuencia de aminoácidos de tu proteína.
 3. Ejecuta las celdas en orden (Runtime > Run all).
 4. Descarga los resultados (estructura PDB, puntajes pLDDT y PAE).
 5. Analiza los resultados con los scripts de este repositorio: Python
-   (02 y 05) o R (02b).
+   (02, 05 y 07) o R (02b).
 
 ## Organismo de trabajo
 
@@ -42,6 +42,7 @@ biosíntesis de lípidos y ácidos grasos.
 | 04 | `04-complejo-proteina-proteina.md` | Predecir un complejo proteína-proteína |
 | 05 | `05-preparar-docking.py` | Preparar la estructura para docking molecular (Python) |
 | 06 | `06-anotar-dominios.md` | Anotar dominios y motivos en la estructura predicha |
+| 07 | `07-proteomica-estructural-familia-accd.py` | Proteómica estructural: comparar la estructura de la familia ACCD en cuatro organismos (Python) |
 | — | `Práctica` | Práctica: predecir estructuras de septinas (individuales, truncadas, dímeros y trímero) |
 
 ## Obtener una secuencia de UniProt
