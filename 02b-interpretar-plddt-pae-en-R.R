@@ -164,5 +164,5 @@ if (!is.null(datos$pae)) {
 #   entre dos residuos. Valores bajos son buenos.
 # - Las regiones con pLDDT < 50 suelen ser desordenadas o flexibles: no
 #   interpretes su forma como definitiva.
-# - Cada gráfico necesita su interpretación: qué es cada eje (con unidades),
+# - Cada gráfico lleva su interpretación: qué es cada eje (con unidades),
 #   qué patrón se ve y qué significa.
